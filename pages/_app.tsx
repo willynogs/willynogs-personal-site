@@ -1,4 +1,5 @@
 import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 import { ChakraProvider, Container, Grid, GridItem } from '@chakra-ui/react'
 import theme from '@/theme'
 
@@ -14,6 +15,9 @@ export default function App({ Component, pageProps }: AppProps) {
           </GridItem>
           <GridItem>
             <Component {...pageProps} />
+          </GridItem>
+          <GridItem>
+            <Footer />
           </GridItem>
         </Grid>
       </Container>
