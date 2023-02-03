@@ -16,7 +16,7 @@ const About: React.FC = () => {
           </Box>
         </Flex>
         <Text fontSize='lg' textAlign='center'>
-          Hi! My name is Will Naugle. I'm a software engineer with 6+ years of experience across the education, insurance, and finance industries. I am based out of Los Angeles, California by way of Cleveland, Ohio.
+          Hi! My name is Will Naugle. I&apos;m a software engineer with 6+ years of experience across the education, insurance, and finance industries. I am based out of Los Angeles, California by way of Cleveland, Ohio.
         </Text>
       </Box>
 
@@ -42,7 +42,7 @@ const About: React.FC = () => {
         </Grid>
 
         <Text align='center' fontSize='lg' paddingBottom={6}>
-          I have had the opportunity to work with many different tech stacks throughout my career. I have worked at public institutions (The Ohio State University), early-stage start-ups (Beam Benefits), and late-stage start-ups as they transition into public companies (Upstart). Below you'll find a list of some of the technologies I've worked most closely with:
+          I have had the opportunity to work with many different tech stacks throughout my career. I have worked at public institutions (The Ohio State University), early-stage start-ups (Beam Benefits), and late-stage start-ups as they transition into public companies (Upstart). Below you&apos;ll find a list of some of the technologies I&apos;ve worked most closely with:
         </Text>
         <Flex justifyContent='center'>
           <Text fontWeight='bold' fontSize='lg'>
@@ -70,8 +70,8 @@ const About: React.FC = () => {
         </Box>
       </Flex>
       <Text align='center' fontSize='lg'>
-        When I'm not working, I love to cook and explore the restaurants around Los Angeles. My girlfriend Sarah and I enjoy hiking and camping with our two dogs Merlin and Penelope. I've recently taken up rock climbing and bouldering.
-        When we're not feeling as active, you can usually find us watching movies.
+        When I&apos;m not working, I love to cook and explore the restaurants around Los Angeles. My girlfriend Sarah and I enjoy hiking and camping with our two dogs Merlin and Penelope. I&apos;ve recently taken up rock climbing and bouldering.
+        When we&apos;re not feeling as active, you can usually find us watching movies.
       </Text>
     </Container>
   )
