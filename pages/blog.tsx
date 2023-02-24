@@ -37,7 +37,7 @@ const Blog = ({ posts }: { posts: MediumPost[] }) => {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const mediumRes = await fetch('https://medium.com/feed/@willynogs1')
   const rawXml = await mediumRes.text()
   const parser = new XMLParser();
