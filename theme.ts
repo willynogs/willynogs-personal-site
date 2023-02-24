@@ -1,13 +1,12 @@
 import { extendTheme } from "@chakra-ui/react"
-import { Inter, Merriweather } from '@next/font/google'
+import { Inconsolata } from '@next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
-const merriweather = Merriweather({ subsets: ['latin'], weight: '400' })
+const inconsolata = Inconsolata({ subsets: ['latin'] });
 
 export default extendTheme({
   fonts: {
-    body: inter.style.fontFamily,
-    heading: merriweather.style.fontFamily,
-    mono: inter.style.fontFamily,
+    body: inconsolata.style.fontFamily,
+    heading: inconsolata.style.fontFamily,
+    mono: inconsolata.style.fontFamily,
   },
 })

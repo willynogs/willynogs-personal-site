@@ -1,10 +1,23 @@
 import { Text, Box, Container, Flex, Grid, GridItem, AspectRatio, Divider, UnorderedList, ListItem, List } from '@chakra-ui/react'
 import Image from 'next/image'
 import me from '@/public/me-with-bear-can.jpeg'
-import meSarahDogs from '@/public/me-sarah-dogs.png'
+import meSarahDogs from '@/public/me-sarah-dogs.jpg'
 import osuLogo from '@/public/osu-logo.png'
 import beamLogo from '@/public/beam-logo.webp'
 import upstartLogo from '@/public/upstart-logo.png'
+
+const skills = [
+  'Ruby on Rails',
+  'RSpec',
+  'Kotlin + Spring',
+  'JUnit',
+  'Typescript',
+  'React + Next.js',
+  'Jest + Testing Library React',
+  'Playwright',
+  'Kafka',
+  'Postgres + MySQL',
+];
 
 const About: React.FC = () => {
   return (
@@ -12,7 +25,7 @@ const About: React.FC = () => {
       <Box>
         <Flex justifyContent='center' paddingBottom={6}>
           <Box w='50%'>
-            <Image src={me} alt="Deer Lakes, Mammoth CA" />
+            <Image src={me} alt="Deer Lakes, Mammoth CA" priority />
           </Box>
         </Flex>
         <Text fontSize='lg' textAlign='center'>
@@ -26,17 +39,17 @@ const About: React.FC = () => {
         <Grid templateColumns='repeat(3, 1fr)' gap={12} paddingBottom={6}>
           <AspectRatio ratio={1}>
             <GridItem>
-              <Image src={osuLogo} alt='The Ohio State University' />
+              <Image src={osuLogo} alt='The Ohio State University' priority />
             </GridItem>
           </AspectRatio>
           <AspectRatio ratio={1}>
             <GridItem>
-              <Image src={beamLogo} alt='Beam Benefits' />
+              <Image src={beamLogo} alt='Beam Benefits' priority />
             </GridItem>
           </AspectRatio>
           <AspectRatio ratio={1}>
             <GridItem>
-              <Image src={upstartLogo} alt='Upstart' />
+              <Image src={upstartLogo} alt='Upstart' priority />
             </GridItem>
           </AspectRatio>
         </Grid>
@@ -45,20 +58,13 @@ const About: React.FC = () => {
           I have had the opportunity to work with many different tech stacks throughout my career. I have worked at public institutions (The Ohio State University), early-stage start-ups (Beam Benefits), and late-stage start-ups as they transition into public companies (Upstart). Below you&apos;ll find a list of some of the technologies I&apos;ve worked most closely with:
         </Text>
         <Flex justifyContent='center'>
-          <Text fontWeight='bold' fontSize='lg'>
-            <UnorderedList>
-              <ListItem>Ruby on Rails</ListItem>
-              <ListItem>RSpec</ListItem>
-              <ListItem>Kotlin + Spring</ListItem>
-              <ListItem>JUnit</ListItem>
-              <ListItem>Typescript</ListItem>
-              <ListItem>React + Next.js</ListItem>
-              <ListItem>Jest + Testing Library React</ListItem>
-              <ListItem>Playwright</ListItem>
-              <ListItem>Kafka</ListItem>
-              <ListItem>Postgres + MySQL</ListItem>
-            </UnorderedList>
-          </Text>
+          <UnorderedList>
+            {skills.map(skill => (
+              <ListItem key={skill}>
+                <Text fontWeight='bold' fontSize='lg'>{skill}</Text>
+              </ListItem>
+            ))}
+          </UnorderedList>
         </Flex>
       </Box>
 
@@ -66,7 +72,7 @@ const About: React.FC = () => {
 
       <Flex justifyContent='center' paddingBottom={6}>
         <Box w='100%'>
-          <Image src={meSarahDogs} alt='Me + Sarah + Dogs' />
+          <Image src={meSarahDogs} alt='Me + Sarah + Dogs' priority />
         </Box>
       </Flex>
       <Text align='center' fontSize='lg'>
