@@ -1,4 +1,4 @@
-import { Text, Box, Container, Flex, Grid, GridItem, AspectRatio, Divider, UnorderedList, ListItem, List } from '@chakra-ui/react'
+import { Text, Box, Container, Flex, Grid, GridItem, AspectRatio, Divider, UnorderedList, ListItem } from '@chakra-ui/react'
 import Image from 'next/image'
 import me from '@/public/me-with-bear-can.jpeg'
 import meSarahDogs from '@/public/me-sarah-dogs.jpg'
@@ -25,7 +25,7 @@ const About: React.FC = () => {
       <Box>
         <Flex justifyContent='center' paddingBottom={6}>
           <Box w='50%'>
-            <Image src={me} alt="Deer Lakes, Mammoth CA" priority />
+            <Image src={me} alt="Deer Lakes, Mammoth CA" placeholder="blur" priority />
           </Box>
         </Flex>
         <Text fontSize='lg' textAlign='center'>
@@ -39,17 +39,17 @@ const About: React.FC = () => {
         <Grid templateColumns='repeat(3, 1fr)' gap={12} paddingBottom={6}>
           <AspectRatio ratio={1}>
             <GridItem>
-              <Image src={osuLogo} alt='The Ohio State University' priority />
+              <Image src={osuLogo} alt='The Ohio State University' placeholder="blur" priority />
             </GridItem>
           </AspectRatio>
           <AspectRatio ratio={1}>
             <GridItem>
-              <Image src={beamLogo} alt='Beam Benefits' priority />
+              <Image src={beamLogo} alt='Beam Benefits' placeholder="blur" priority />
             </GridItem>
           </AspectRatio>
           <AspectRatio ratio={1}>
             <GridItem>
-              <Image src={upstartLogo} alt='Upstart' priority />
+              <Image src={upstartLogo} alt='Upstart' placeholder="blur" priority />
             </GridItem>
           </AspectRatio>
         </Grid>
@@ -72,7 +72,7 @@ const About: React.FC = () => {
 
       <Flex justifyContent='center' paddingBottom={6}>
         <Box w='100%'>
-          <Image src={meSarahDogs} alt='Me + Sarah + Dogs' priority />
+          <Image src={meSarahDogs} alt='Me + Sarah + Dogs' placeholder="blur" priority />
         </Box>
       </Flex>
       <Text align='center' fontSize='lg'>
