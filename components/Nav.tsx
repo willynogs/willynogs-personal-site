@@ -23,7 +23,7 @@ const Nav: React.FC = () => {
           Contact Me
         </Link>
         <Link as={NextLink} href='/resume.pdf' target='_blank'>
-          Résumé
+          Resume
         </Link>
       </Flex>
     </Box>

@@ -7,16 +7,23 @@ import beamLogo from '@/public/beam-logo.webp'
 import upstartLogo from '@/public/upstart-logo.png'
 
 const skills = [
-  'Ruby on Rails',
-  'RSpec',
-  'Kotlin + Spring',
-  'JUnit',
+  'Java',
+  'Kotlin',
+  'Spring',
   'Typescript',
-  'React + Next.js',
-  'Jest + Testing Library React',
-  'Playwright',
+  'React',
+  'Next.js',
+  'Material UI',
+  'Tailwind CSS',
+  'Ruby ',
+  'Rails',
+  'Postgres',
+  'Redis',
   'Kafka',
-  'Postgres + MySQL',
+  'Debezium',
+  'Playwright',
+  'Temporal',
+  'KrakenD',
 ];
 
 const About: React.FC = () => {
@@ -29,7 +36,7 @@ const About: React.FC = () => {
           </Box>
         </Flex>
         <Text fontSize='lg' textAlign='center'>
-          Hi! My name is Will Naugle. I&apos;m a software engineer with 6+ years of experience across the education, insurance, and finance industries. I am based out of Los Angeles, California by way of Cleveland, Ohio.
+          Hi! I&apos;m Will Naugle, a software engineer with 6+ years of experience across the education, insurance, and finance industries. Currently based out of Los Angeles, California by way of Cleveland, Ohio.
         </Text>
       </Box>
 
@@ -57,15 +64,14 @@ const About: React.FC = () => {
         <Text align='center' fontSize='lg' paddingBottom={6}>
           I have had the opportunity to work with many different tech stacks throughout my career. I have worked at public institutions (The Ohio State University), early-stage start-ups (Beam Benefits), and late-stage start-ups as they transition into public companies (Upstart). Below you&apos;ll find a list of some of the technologies I&apos;ve worked most closely with:
         </Text>
-        <Flex justifyContent='center'>
-          <UnorderedList>
-            {skills.map(skill => (
-              <ListItem key={skill}>
-                <Text fontWeight='bold' fontSize='lg'>{skill}</Text>
-              </ListItem>
+
+        <Grid templateColumns='repeat(2, 1fr)'>
+          {skills.map(skill => (
+              <GridItem key={skill}>
+                <Text fontWeight='bold' fontSize='lg' align='center'>{skill}</Text>
+              </GridItem>
             ))}
-          </UnorderedList>
-        </Flex>
+        </Grid>
       </Box>
 
       <Divider my={10} />

@@ -1,5 +1,5 @@
-import { extendTheme } from "@chakra-ui/react"
-import { Inconsolata } from '@next/font/google'
+import { extendTheme } from '@chakra-ui/react'
+import { Inconsolata } from 'next/font/google'
 
 const inconsolata = Inconsolata({ subsets: ['latin'] });
 
