@@ -8,8 +8,6 @@ const publicDir = join(__dirname, '..', 'public')
 
 const targets = [
   { file: 'mammoth-camping.jpeg', maxW: 2000, quality: 80 },
-  { file: 'me-sarah-dogs.jpg', maxW: 2000, quality: 80 },
-  { file: 'me-with-bear-can.jpeg', maxW: 1600, quality: 80 },
   { file: 'headshot.jpg', maxW: 1400, quality: 82 },
   { file: 'pumpkin-patch.jpg', maxW: 2000, quality: 80 },
 ]
