@@ -131,7 +131,7 @@ const About: React.FC = () => {
 
           <MotionBox variants={fadeUp}>
             <Text align="center" fontSize="lg">
-              When I&apos;m not working, I love to cook and explore the restaurants around Los Angeles. My girlfriend Sarah and I enjoy hiking and camping with our two dogs Merlin and Penelope. I&apos;ve recently taken up rock climbing and bouldering.
+              When I&apos;m not working, I love to cook and explore the restaurants around Los Angeles. My girlfriend Sarah and I enjoy hiking and camping with our two dogs Merlin and Penelope.
               When we&apos;re not feeling as active, you can usually find us watching movies.
             </Text>
           </MotionBox>
