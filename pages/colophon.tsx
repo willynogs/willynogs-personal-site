@@ -25,7 +25,7 @@ const design: Row[] = [
 
 const niceties: Row[] = [
   { term: 'Command palette', detail: '⌘K, or tap the badge in the header' },
-  { term: 'Motion', detail: 'Page transitions, magnetic nav, staggered entries' },
+  { term: 'Motion', detail: 'Page transitions, nav underline slide, staggered entries' },
   { term: 'Reduced motion', detail: 'Respected via prefers-reduced-motion' },
   { term: 'Metadata', detail: 'Per-page SEO, canonical URLs, OG + Twitter' },
   { term: 'Sitemap', detail: '/sitemap.xml · /robots.txt' },
