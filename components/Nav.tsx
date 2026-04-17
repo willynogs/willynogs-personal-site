@@ -41,8 +41,8 @@ const Nav: React.FC = () => {
 
   return (
     <Box as="header" pt={8} pb={6}>
-      <Flex justifyContent="space-between" alignItems="center" mb={6}>
-        <Box w="32px" />
+      <Flex alignItems="center" mb={6}>
+        <Box flex={1} />
         <ChakraLink as={NextLink} href="/" _hover={{ textDecoration: 'none' }}>
           <MotionHeading
             as="h1"
@@ -55,7 +55,7 @@ const Nav: React.FC = () => {
             Will Naugle
           </MotionHeading>
         </ChakraLink>
-        <HStack spacing={1}>
+        <HStack flex={1} justify="flex-end" spacing={1}>
           <IconButton
             aria-label="Open command palette (⌘K)"
             variant="ghost"
