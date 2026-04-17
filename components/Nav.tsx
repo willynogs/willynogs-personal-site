@@ -1,4 +1,4 @@
-import { Box, Heading, Flex, IconButton, useColorMode, Link as ChakraLink, HStack } from '@chakra-ui/react'
+import { Box, Heading, Flex, IconButton, Button, useColorMode, Link as ChakraLink, HStack } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
@@ -54,27 +54,22 @@ const Nav: React.FC = () => {
           </MotionHeading>
         </ChakraLink>
         <HStack flex={1} justify="flex-end" spacing={1}>
-          <IconButton
+          <Button
             aria-label="Open command palette (⌘K)"
             variant="ghost"
             size="sm"
+            minW={8}
+            h={8}
+            px={2}
             color="fgMuted"
+            fontFamily="mono"
+            fontSize="xs"
+            fontWeight="normal"
             _hover={{ color: 'accentFg', bg: 'borderSubtle' }}
             onClick={openPalette}
-            icon={
-              <Box
-                as="span"
-                fontFamily="mono"
-                fontSize="xs"
-                lineHeight="1"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-              >
-                ⌘K
-              </Box>
-            }
-          />
+          >
+            ⌘K
+          </Button>
           <IconButton
             aria-label={colorMode === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
             variant="ghost"
