@@ -74,21 +74,21 @@ const About: React.FC = () => {
 
           <MotionBox variants={fadeUp}>
             <Grid templateColumns="repeat(3, 1fr)" gap={12} paddingBottom={6}>
-              <AspectRatio ratio={1}>
-                <GridItem>
+              <Box bg="ink.50" borderRadius="md" p={3}>
+                <AspectRatio ratio={1}>
                   <Image src={osuLogo} alt="The Ohio State University" placeholder="blur" />
-                </GridItem>
-              </AspectRatio>
-              <AspectRatio ratio={1}>
-                <GridItem>
+                </AspectRatio>
+              </Box>
+              <Box bg="ink.50" borderRadius="md" p={3}>
+                <AspectRatio ratio={1}>
                   <Image src={beamLogo} alt="Beam Benefits" placeholder="blur" />
-                </GridItem>
-              </AspectRatio>
-              <AspectRatio ratio={1}>
-                <GridItem>
+                </AspectRatio>
+              </Box>
+              <Box bg="ink.50" borderRadius="md" p={3}>
+                <AspectRatio ratio={1}>
                   <Image src={upstartLogo} alt="Upstart" placeholder="blur" />
-                </GridItem>
-              </AspectRatio>
+                </AspectRatio>
+              </Box>
             </Grid>
           </MotionBox>
 
