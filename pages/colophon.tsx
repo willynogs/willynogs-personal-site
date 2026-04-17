@@ -16,7 +16,7 @@ const stack: Row[] = [
 ]
 
 const design: Row[] = [
-  { term: 'Typeface', detail: 'Inconsolata — Google Fonts' },
+  { term: 'Typeface', detail: 'Inconsolata, Google Fonts' },
   { term: 'Accent', detail: '#ff7847' },
   { term: 'Ink light', detail: '#fafaf7' },
   { term: 'Ink dark', detail: '#0a0a09' },
@@ -24,7 +24,7 @@ const design: Row[] = [
 ]
 
 const niceties: Row[] = [
-  { term: 'Command palette', detail: '⌘K — or tap the badge in the header' },
+  { term: 'Command palette', detail: '⌘K, or tap the badge in the header' },
   { term: 'Motion', detail: 'Page transitions, magnetic nav, staggered entries' },
   { term: 'Reduced motion', detail: 'Respected via prefers-reduced-motion' },
   { term: 'Metadata', detail: 'Per-page SEO, canonical URLs, OG + Twitter' },

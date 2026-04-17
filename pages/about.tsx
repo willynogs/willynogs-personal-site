@@ -28,6 +28,9 @@ const skills = [
   'Playwright',
   'Temporal',
   'KrakenD',
+  'FastAPI',
+  'pydantic-ai',
+  'pydantic-evals',
 ]
 
 const stagger: Variants = {
@@ -49,7 +52,7 @@ const About: React.FC = () => {
     <>
       <SEO
         title="About"
-        description="Will Naugle — software engineer with 6+ years across education, insurance, and finance. LA via Cleveland."
+        description="Will Naugle, software engineer with 6+ years across education, insurance, and finance. LA via Cleveland."
       />
       <Container px={0}>
         <MotionBox variants={stagger} initial={base} animate={animate}>
@@ -121,7 +124,7 @@ const About: React.FC = () => {
 
           <MotionBox variants={fadeUp}>
             <Text align="center" fontSize="lg" pt={10}>
-              Lately, I&apos;ve been focused on building agents to automate and enhance mortgage operational work — reasoning about ambiguous data across a variety of sources. Day-to-day, that&apos;s Temporal, pydantic-ai, pydantic-evals, and FastAPI.
+              Lately I&apos;ve been building agents that automate mortgage operations and reason about ambiguous data across many sources. Stack: Temporal, pydantic-ai, pydantic-evals, and FastAPI.
             </Text>
           </MotionBox>
 
