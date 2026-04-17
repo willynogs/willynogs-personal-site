@@ -2,7 +2,7 @@ import { Text, Box, Container, Flex, Grid, GridItem, AspectRatio, Divider } from
 import Image from 'next/image'
 import { motion, useReducedMotion, Variants } from 'framer-motion'
 import me from '@/public/headshot.jpg'
-import meSarahDogs from '@/public/me-sarah-dogs.jpg'
+import meSarahDogs from '@/public/pumpkin-patch.jpg'
 import osuLogo from '@/public/osu-logo.png'
 import beamLogo from '@/public/beam-logo.webp'
 import upstartLogo from '@/public/upstart-logo.png'
