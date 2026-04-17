@@ -122,12 +122,6 @@ const About: React.FC = () => {
             </Grid>
           </MotionBox>
 
-          <MotionBox variants={fadeUp}>
-            <Text align="center" fontSize="lg" pt={10}>
-              Lately I&apos;ve been building agents that automate mortgage operations and reason about ambiguous data across many sources. Stack: Temporal, pydantic-ai, pydantic-evals, and FastAPI.
-            </Text>
-          </MotionBox>
-
           <Divider my={10} borderColor="borderSubtle" />
 
           <MotionBox variants={fadeUp}>
