@@ -16,8 +16,7 @@ const stack: Row[] = [
 ]
 
 const design: Row[] = [
-  { term: 'Display', detail: 'Fraunces — Google Fonts' },
-  { term: 'Body / mono', detail: 'Inconsolata — Google Fonts' },
+  { term: 'Typeface', detail: 'Inconsolata — Google Fonts' },
   { term: 'Accent', detail: '#ff7847' },
   { term: 'Ink light', detail: '#fafaf7' },
   { term: 'Ink dark', detail: '#0a0a09' },
@@ -89,7 +88,7 @@ const Colophon: React.FC = () => {
         py={4}
       >
         <MotionBox variants={fadeUp} mb={10}>
-          <Heading as="h2" size="xl" fontFamily="heading" letterSpacing="-0.02em">
+          <Heading as="h2" size="xl">
             Colophon
           </Heading>
           <Text color="fgMuted" mt={3} fontSize="md">

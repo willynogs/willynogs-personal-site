@@ -70,7 +70,7 @@ const ContactMe: React.FC = () => {
         py={4}
       >
         <MotionBox variants={fadeUp} mb={10}>
-          <Heading as="h2" size="xl" fontFamily="heading" letterSpacing="-0.02em">
+          <Heading as="h2" size="xl">
             Say hi.
           </Heading>
           <Text color="fgMuted" mt={3} fontSize="md">
@@ -102,10 +102,8 @@ const ContactMe: React.FC = () => {
                 <Flex justify="space-between" align="center" gap={4}>
                   <HStack spacing={4} align="baseline">
                     <Text
-                      fontFamily="heading"
                       fontSize="2xl"
-                      fontWeight={500}
-                      letterSpacing="-0.015em"
+                      fontWeight={700}
                       transition="color 150ms ease"
                       _groupHover={{ color: 'accentFg' }}
                     >

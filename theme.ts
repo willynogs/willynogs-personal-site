@@ -1,5 +1,5 @@
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react'
-import { Inconsolata, Fraunces } from 'next/font/google'
+import { Inconsolata } from 'next/font/google'
 
 const inconsolata = Inconsolata({
   subsets: ['latin'],
@@ -7,14 +7,7 @@ const inconsolata = Inconsolata({
   variable: '--font-mono',
 })
 
-const fraunces = Fraunces({
-  subsets: ['latin'],
-  display: 'swap',
-  axes: ['SOFT', 'opsz'],
-  variable: '--font-display',
-})
-
-export const fontVariables = `${fraunces.variable} ${inconsolata.variable}`
+export const fontVariables = inconsolata.variable
 
 const config: ThemeConfig = {
   initialColorMode: 'system',
@@ -26,7 +19,7 @@ const theme = extendTheme({
   fonts: {
     body: inconsolata.style.fontFamily,
     mono: inconsolata.style.fontFamily,
-    heading: fraunces.style.fontFamily,
+    heading: inconsolata.style.fontFamily,
   },
   colors: {
     accent: {
@@ -143,8 +136,7 @@ const theme = extendTheme({
     Heading: {
       baseStyle: {
         fontFamily: 'heading',
-        fontWeight: 500,
-        letterSpacing: '-0.02em',
+        fontWeight: 700,
       },
     },
   },

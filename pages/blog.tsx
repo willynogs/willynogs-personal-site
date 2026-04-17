@@ -43,7 +43,7 @@ const Blog = ({ posts }: { posts: MediumPost[] }) => {
         animate={reduce ? undefined : 'animate'}
       >
         <MotionBox variants={fadeUp} mb={8}>
-          <Heading as="h2" size="xl" fontFamily="heading" letterSpacing="-0.02em">
+          <Heading as="h2" size="xl">
             Writing
           </Heading>
           <Text color="fgMuted" fontSize="sm" mt={2}>
@@ -80,9 +80,6 @@ const Blog = ({ posts }: { posts: MediumPost[] }) => {
                   <Heading
                     as="h3"
                     size="md"
-                    fontFamily="heading"
-                    fontWeight={500}
-                    letterSpacing="-0.015em"
                     transition="color 150ms ease"
                     _groupHover={{ color: 'accentFg' }}
                   >

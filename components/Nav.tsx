@@ -46,10 +46,7 @@ const Nav: React.FC = () => {
         <ChakraLink as={NextLink} href="/" _hover={{ textDecoration: 'none' }}>
           <MotionHeading
             as="h1"
-            size="2xl"
-            fontFamily="heading"
-            fontWeight={400}
-            letterSpacing="-0.03em"
+            size="xl"
             color="fg"
             initial={reduce ? undefined : { opacity: 0, y: -6 }}
             animate={reduce ? undefined : { opacity: 1, y: 0 }}
