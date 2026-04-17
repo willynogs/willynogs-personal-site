@@ -62,7 +62,15 @@ const Nav: React.FC = () => {
             _hover={{ color: 'accentFg', bg: 'borderSubtle' }}
             onClick={openPalette}
             icon={
-              <Box fontFamily="mono" fontSize="xs" letterSpacing="tight">
+              <Box
+                as="span"
+                fontFamily="mono"
+                fontSize="xs"
+                lineHeight="1"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+              >
                 ⌘K
               </Box>
             }
