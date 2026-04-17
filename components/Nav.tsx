@@ -3,10 +3,8 @@ import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
-import MagneticLink from '@/components/MagneticLink'
 
 const MotionHeading = motion(Heading)
-const MotionBox = motion(Box)
 
 const navItems = [
   { href: '/about', label: 'About' },
@@ -85,30 +83,37 @@ const Nav: React.FC = () => {
         {navItems.map((item) => {
           const active = !item.external && router.route === item.href
           return (
-            <MagneticLink
+            <ChakraLink
               key={item.href}
+              as={item.external ? undefined : NextLink}
               href={item.href}
-              external={item.external}
+              target={item.external ? '_blank' : undefined}
+              rel={item.external ? 'noopener noreferrer' : undefined}
               fontFamily="mono"
               fontSize="sm"
               color={active ? 'accentFg' : 'fg'}
-              _hover={{ color: 'accentFg', textDecoration: 'none' }}
               position="relative"
               py={1}
+              transition="color 150ms ease"
+              _hover={{ color: 'accentFg', textDecoration: 'none' }}
+              _after={{
+                content: '""',
+                position: 'absolute',
+                left: 0,
+                right: 0,
+                bottom: 0,
+                height: '1px',
+                bg: 'accentFg',
+                transform: active ? 'scaleX(1)' : 'scaleX(0)',
+                transformOrigin: 'left',
+                transition: 'transform 200ms ease',
+              }}
+              sx={{
+                '&:hover::after': { transform: 'scaleX(1)' },
+              }}
             >
               {item.label}
-              {active && (
-                <MotionBox
-                  layoutId="nav-underline"
-                  position="absolute"
-                  left={0}
-                  right={0}
-                  bottom={0}
-                  height="1px"
-                  bg="accentFg"
-                />
-              )}
-            </MagneticLink>
+            </ChakraLink>
           )
         })}
       </Flex>
